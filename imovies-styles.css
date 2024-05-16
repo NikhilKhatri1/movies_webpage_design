@@ -1,0 +1,224 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-image: url(./public/images/netflix-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 600px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    width: 300px;
+    /* Adjust width as needed */
+}
+
+.search-bar input[type="text"] {
+    color: goldenrod;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.text-warning {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.bi-star-fill {
+    color: gold;
+    font-size: 20px;
+}
+
+.bi-star {
+    color: gold;
+    font-size: 20px;
+}
+
+.middle-part {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 500px;
+    align-items: center;
+}
+
+.mid-container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.rating {
+    /* float: left; */
+    margin-right: 10%;
+    padding-left: 50px;
+}
+
+.text {
+    color: gold;
+    font-size: 15px;
+
+    text-align: justify;
+}
+
+/* .text p {
+    white-space: nowrap;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.carousel {
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.carousel-item {
+    text-align: left;
+}
+
+/* .carousel-item img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+} */
+
+.dropdown-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid1 {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.card {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    justify-content: center;
+    /* Added margin between cards */
+}
+
+.bi-lightning-charge-fill {
+    font-size: 20px;
+    color: gold;
+}
+
+.card-header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: aqua;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    height: 300px;
+    background-image: url("./public/images/body-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front-body,
+.back-body {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-body {
+    transform: rotateY(180deg);
+}
+
+.front-body img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+    width: 90%;
+}
+
+.para {
+    color: aqua;
+    margin: 0 14px;
+    text-align: justify;
+}
+
+.btn-outline-primary {
+    width: 70%;
+    cursor: pointer;
+}
+
+.back-body {
+    color: aqua;
+    text-align: justify;
+}
